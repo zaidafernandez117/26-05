@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+    {% load static %}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beagle World | Tu Amigo Fiel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+   <!-- ============================================
+       HEADER
+  ============================================ -->
+  <header>
+    <div class="container">
+      <a href="#" class="logo">
+        <div class="logo-icon">🐕</div>
+        <span class="logo-text">Beagle World</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#personajes">Personajes</a></li>
+          <li><a href="#datos">Datos</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============================================
+       HERO SECTION
+  ============================================ -->
+  <section class="hero" id="inicio">
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-badge">Tu Mejor Amigo</span>
+        <h1>Bienvenido al Mundo de los Beagles</h1>
+        <p>
+          Descubre el universo mas adorable y divertido de los perros beagle. 
+          Aventuras, risas y mucho amor te esperan en cada rincon.
+        </p>
+        <div class="hero-buttons">
+          <a href="#personajes" class="btn btn-primary">Conocer Mas</a>
+          <a href="#galeria" class="btn btn-secondary">Ver Galeria</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="{% static 'src/beagle-doghouse.png' %}" alt="Beagle en su casita">
+        <img src="{% static 'src/yellow-bird.png' %}" alt="Pajaro amigo" class="floating-bird">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       PERSONAJES SECTION
+  ============================================ -->
+  <section class="characters" id="personajes">
+    <div class="container">
+      <h2 class="section-title">Nuestros Personajes</h2>
+      <div class="characters-grid">
+        <div class="character-card">
+          <img src="{% static 'src/beagle-doghouse.png' %}" alt="Buddy el Beagle">
+          <h3>Buddy</h3>
+          <p>El beagle mas sonador. Le encanta dormir en su casita roja y pensar en aventuras.</p>
+        </div>
+        <div class="character-card">
+          <img src="{% static 'src/yellow-bird.png' %}" alt="Sunny el Pajaro">
+          <h3>Sunny</h3>
+          <p>El mejor amigo de Buddy. Un pequeno pajaro amarillo lleno de energia y alegria.</p>
+        </div>
+        <div class="character-card">
+          <img src="{% static 'src/beagle-happy.png' %}" alt="Joy el Beagle">
+          <h3>Joy</h3>
+          <p>La beagle mas feliz del vecindario. Siempre esta lista para bailar y celebrar.</p>
+        </div>
+        <div class="character-card">
+          <img src="{% static 'src/beagle-sleeping.png' %}" alt="Sleepy el Beagle">
+          <h3>Sleepy</h3>
+          <p>El experto en siestas. Puede dormir en cualquier lugar y a cualquier hora.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       DATOS CURIOSOS SECTION
+  ============================================ -->
+  <section class="fun-facts" id="datos">
+    <div class="container">
+      <h2 class="section-title">Datos Curiosos</h2>
+      <div class="facts-grid">
+        <div class="fact-card">
+          <div class="fact-icon">👃</div>
+          <div class="fact-content">
+            <h3>Super Olfato</h3>
+            <p>Los beagles tienen aproximadamente 220 millones de receptores olfativos.</p>
+          </div>
+        </div>
+        <div class="fact-card">
+          <div class="fact-icon">🎵</div>
+          <div class="fact-content">
+            <h3>Cantantes Natos</h3>
+            <p>Su nombre viene del frances "begueule" que significa garganta abierta.</p>
+          </div>
+        </div>
+        <div class="fact-card">
+          <div class="fact-icon">👑</div>
+          <div class="fact-content">
+            <h3>Favoritos Reales</h3>
+            <p>La Reina Isabel I de Inglaterra tenia beagles miniatura.</p>
+          </div>
+        </div>
+        <div class="fact-card">
+          <div class="fact-icon">🏃</div>
+          <div class="fact-content">
+            <h3>Energia Infinita</h3>
+            <p>Necesitan al menos una hora de ejercicio diario para mantenerse felices.</p>
+          </div>
+        </div>
+        <div class="fact-card">
+          <div class="fact-icon">❤️</div>
+          <div class="fact-content">
+            <h3>Super Sociales</h3>
+            <p>Son una de las razas mas amigables y se llevan bien con todos.</p>
+          </div>
+        </div>
+        <div class="fact-card">
+          <div class="fact-icon">🎂</div>
+          <div class="fact-content">
+            <h3>Larga Vida</h3>
+            <p>Pueden vivir entre 12 y 15 anos con los cuidados adecuados.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       GALERIA SECTION
+  ============================================ -->
+  <section class="gallery" id="galeria">
+    <div class="container">
+      <h2 class="section-title">Galeria</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="{% static 'src/beagle-doghouse.png' %}" alt="Beagle descansando">
+          <div class="gallery-item-content">
+            <h3>Hora de Descansar</h3>
+            <p>Buddy en su lugar favorito</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="{% static 'src/beagle-happy.png' %}" alt="Beagle feliz">
+          <div class="gallery-item-content">
+            <h3>Momento de Alegria</h3>
+            <p>Joy celebrando un buen dia</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="{% static 'src/beagle-sleeping.png' %}" alt="Beagle durmiendo">
+          <div class="gallery-item-content">
+            <h3>Dulces Suenos</h3>
+            <p>Sleepy en su siesta favorita</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="{% static 'src/yellow-bird.png' %}" alt="Pajaro amarillo">
+          <div class="gallery-item-content">
+            <h3>Mejor Amigo</h3>
+            <p>Sunny siempre presente</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+  ============================================ -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <div class="footer-logo-icon">🐕</div>
+          <span class="footer-logo-text">Beagle World</span>
+        </div>
+        <ul class="footer-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#personajes">Personajes</a></li>
+          <li><a href="#datos">Datos</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>Hecho con amor para los amantes de los beagles</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

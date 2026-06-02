@@ -1,8 +1,8 @@
 from django.db import models
 
 # Create your models here.
-class alumnos(Models.Model):
-    id_alumnos=autoField(primary_key=true)
+class alumnos(models.Model):
+    id_alumnos=models.AutoField(primary_key=True)
     dni=models.TextField(max_length=10)
     apellido=models.TextField(max_length=35)
     nombre=models.TextField(max_length=35)
